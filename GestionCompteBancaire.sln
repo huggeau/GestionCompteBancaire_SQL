@@ -14,7 +14,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompteBancaireLib", "Compte
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GUICompteBancaire", "GUICompteBancaire\GUICompteBancaire.csproj", "{2FDFD24F-748C-4DF8-AA93-D754EB8505E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompteBancaireEF", "CompteBancaireEF\CompteBancaireEF.csproj", "{8AC7D199-68AD-4786-A7E8-5C6B0AA19CC1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompteBancaireEF", "CompteBancaireEF\CompteBancaireEF.csproj", "{8AC7D199-68AD-4786-A7E8-5C6B0AA19CC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompteBancaireEF_Test", "CompteBancaireEF_Test\CompteBancaireEF_Test.csproj", "{3FAB5A89-A21F-4265-9351-E02039FF449C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +40,10 @@ Global
 		{8AC7D199-68AD-4786-A7E8-5C6B0AA19CC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8AC7D199-68AD-4786-A7E8-5C6B0AA19CC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8AC7D199-68AD-4786-A7E8-5C6B0AA19CC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FAB5A89-A21F-4265-9351-E02039FF449C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FAB5A89-A21F-4265-9351-E02039FF449C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FAB5A89-A21F-4265-9351-E02039FF449C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FAB5A89-A21F-4265-9351-E02039FF449C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
