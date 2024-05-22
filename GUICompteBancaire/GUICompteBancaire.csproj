@@ -12,4 +12,10 @@
     <ProjectReference Include="..\CompteBancaireLib\CompteBancaireLib.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="ComptesBancaire.sqlite">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
