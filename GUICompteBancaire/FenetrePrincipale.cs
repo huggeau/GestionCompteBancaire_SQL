@@ -70,7 +70,7 @@ namespace GUICompteBancaire
         private void creerToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CreationCompte fenetreCreation = new CreationCompte();
-            if ( fenetreCreation.ShowDialog() == DialogResult.OK )
+            if (fenetreCreation.ShowDialog() == DialogResult.OK)
             {
                 string proprio = fenetreCreation.textProprio.Text;
                 decimal solde = decimal.Parse(fenetreCreation.textSolde.Text);
@@ -82,6 +82,13 @@ namespace GUICompteBancaire
                 nouvelleFenetre.MdiParent = this;
                 nouvelleFenetre.Show();
             }
+        }
+
+        private void gestionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FentreBdd nouvelleFenetre = new FentreBdd();
+            nouvelleFenetre.MdiParent = this;
+            nouvelleFenetre.Show();
         }
     }
 }

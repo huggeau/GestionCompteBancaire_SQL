@@ -34,16 +34,19 @@
             creerToolStripMenuItem = new ToolStripMenuItem();
             toolStripSeparator1 = new ToolStripSeparator();
             quitterToolStripMenuItem = new ToolStripMenuItem();
+            gestionBddToolStripMenuItem = new ToolStripMenuItem();
+            gestionToolStripMenuItem = new ToolStripMenuItem();
             menuPrincipal.SuspendLayout();
             SuspendLayout();
             // 
             // menuPrincipal
             // 
             menuPrincipal.ImageScalingSize = new Size(20, 20);
-            menuPrincipal.Items.AddRange(new ToolStripItem[] { fichierToolStripMenuItem });
+            menuPrincipal.Items.AddRange(new ToolStripItem[] { fichierToolStripMenuItem, gestionBddToolStripMenuItem });
             menuPrincipal.Location = new Point(0, 0);
             menuPrincipal.Name = "menuPrincipal";
-            menuPrincipal.Size = new Size(1006, 28);
+            menuPrincipal.Padding = new Padding(5, 2, 0, 2);
+            menuPrincipal.Size = new Size(880, 24);
             menuPrincipal.TabIndex = 0;
             menuPrincipal.Text = "menuStrip1";
             // 
@@ -51,43 +54,58 @@
             // 
             fichierToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { ouvrirToolStripMenuItem, creerToolStripMenuItem, toolStripSeparator1, quitterToolStripMenuItem });
             fichierToolStripMenuItem.Name = "fichierToolStripMenuItem";
-            fichierToolStripMenuItem.Size = new Size(66, 24);
+            fichierToolStripMenuItem.Size = new Size(54, 20);
             fichierToolStripMenuItem.Text = "Fichier";
             // 
             // ouvrirToolStripMenuItem
             // 
             ouvrirToolStripMenuItem.Name = "ouvrirToolStripMenuItem";
-            ouvrirToolStripMenuItem.Size = new Size(224, 26);
+            ouvrirToolStripMenuItem.Size = new Size(180, 22);
             ouvrirToolStripMenuItem.Text = "Ouvrir";
             ouvrirToolStripMenuItem.Click += ouvrirToolStripMenuItem_Click;
             // 
             // creerToolStripMenuItem
             // 
             creerToolStripMenuItem.Name = "creerToolStripMenuItem";
-            creerToolStripMenuItem.Size = new Size(224, 26);
+            creerToolStripMenuItem.Size = new Size(180, 22);
             creerToolStripMenuItem.Text = "Créer";
             creerToolStripMenuItem.Click += creerToolStripMenuItem_Click;
             // 
             // toolStripSeparator1
             // 
             toolStripSeparator1.Name = "toolStripSeparator1";
-            toolStripSeparator1.Size = new Size(221, 6);
+            toolStripSeparator1.Size = new Size(177, 6);
             // 
             // quitterToolStripMenuItem
             // 
             quitterToolStripMenuItem.Name = "quitterToolStripMenuItem";
-            quitterToolStripMenuItem.Size = new Size(224, 26);
+            quitterToolStripMenuItem.Size = new Size(180, 22);
             quitterToolStripMenuItem.Text = "Quitter";
             quitterToolStripMenuItem.Click += quitterToolStripMenuItem_Click;
             // 
+            // gestionBddToolStripMenuItem
+            // 
+            gestionBddToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { gestionToolStripMenuItem });
+            gestionBddToolStripMenuItem.Name = "gestionBddToolStripMenuItem";
+            gestionBddToolStripMenuItem.Size = new Size(80, 20);
+            gestionBddToolStripMenuItem.Text = "GestionBdd";
+            // 
+            // gestionToolStripMenuItem
+            // 
+            gestionToolStripMenuItem.Name = "gestionToolStripMenuItem";
+            gestionToolStripMenuItem.Size = new Size(180, 22);
+            gestionToolStripMenuItem.Text = "gestion";
+            gestionToolStripMenuItem.Click += gestionToolStripMenuItem_Click;
+            // 
             // FenetrePrincipale
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1006, 643);
+            ClientSize = new Size(880, 482);
             Controls.Add(menuPrincipal);
             IsMdiContainer = true;
             MainMenuStrip = menuPrincipal;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "FenetrePrincipale";
             Text = "Gestion Compte Bancaire";
             menuPrincipal.ResumeLayout(false);
@@ -104,5 +122,7 @@
         private ToolStripSeparator toolStripSeparator1;
         private ToolStripMenuItem quitterToolStripMenuItem;
         private ToolStripMenuItem creerToolStripMenuItem;
+        private ToolStripMenuItem gestionBddToolStripMenuItem;
+        private ToolStripMenuItem gestionToolStripMenuItem;
     }
 }

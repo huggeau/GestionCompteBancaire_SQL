@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CompteBancaireEF\CompteBancaireEF.csproj" />
     <ProjectReference Include="..\CompteBancaireLib\CompteBancaireLib.csproj" />
   </ItemGroup>
 
